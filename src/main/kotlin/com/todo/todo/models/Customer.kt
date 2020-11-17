@@ -1,4 +1,4 @@
-package com.todo.models
+package com.todo.todo.models
 
 import javax.persistence.Entity
 import javax.persistence.GeneratedValue
@@ -8,7 +8,7 @@ import javax.persistence.Id
 @Entity
 class Customer(
         val firstname:String,
-        val secondname:String,
+        val secondName:String,
         @Id @GeneratedValue(strategy=GenerationType.AUTO)
         val id:Long=-1,
 ) {
